@@ -5,6 +5,8 @@ import morgan from "morgan";
 import deudasRoutes from "./routes/deudas.routes";
 import consumoaguaRoutes from "./routes/consumoagua.routes";
 import multasRoutes from "./routes/multas.routes";
+import fecharecRoutes from "./routes/fecharec.routes";
+import generaterecRoutes from "./routes/generaterec.routes";
 
 const app = express();
 
@@ -19,5 +21,7 @@ app.use(express.json());
 app.use("/api/deudas",deudasRoutes);
 app.use("/api/consumoagua",consumoaguaRoutes);
 app.use("/api/multas",multasRoutes);
+app.use("/api/fecharecibo",fecharecRoutes);
+app.use("/api/generaterecibo",generaterecRoutes);
 
 export default app;
