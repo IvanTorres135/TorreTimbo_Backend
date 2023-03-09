@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import cors from "cors";
 
 // Routes
 import deudasRoutes from "./routes/deudas.routes";
@@ -11,6 +12,8 @@ import datauserRoutes from "./routes/datauser.routes";
 import recibodepaRoutes from "./routes/recibodepa.routes";
 
 const app = express();
+
+app.use(cors());
 
 // Settings
 app.set("port", 3000);
