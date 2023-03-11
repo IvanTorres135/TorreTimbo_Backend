@@ -23,12 +23,12 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 //Routes
-app.use("/api/deudas",deudasRoutes);
-app.use("/api/consumoagua",consumoaguaRoutes);
-app.use("/api/multas",multasRoutes);
-app.use("/api/fecharecibo",fecharecRoutes);
-app.use("/api/generaterecibo",generaterecRoutes);
-app.use("/api/datauser",datauserRoutes);
-app.use("/api/recibodepa",recibodepaRoutes);
+app.use("/ne-Emision/servicio-al-cliente/v1/deudas",deudasRoutes);
+app.use("/ne-Emision/servicio-al-cliente/v1/consumoagua",consumoaguaRoutes);
+app.use("/ne-Multas/servicio-al-cliente/v1/multas",multasRoutes);
+app.use("/ne-Emision/servicio-al-cliente/v1/Fecharecibo",fecharecRoutes);
+app.use("/ne-Emision/servicio-al-cliente/v1/generaterecibo",generaterecRoutes);
+app.use("/ne-User/servicio-al-cliente/v1/dpto",datauserRoutes);
+//app.use("/api/recibodepa",recibodepaRoutes);
 
 export default app;
